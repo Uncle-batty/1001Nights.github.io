@@ -11,90 +11,12 @@
 
     <style >
         /* Add styles for the About section */
-#About {
-    text-align: center;
-}
 
-#About h2 {
-    font-size: 24px;
-}
-
-/* Styles for the content container */
-.content-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.gray-box {
-    background-color: #ccc;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.image {
-    display: block;
-    width: 200px;
-    /* Adjust the size as needed */
-    margin-top: 20px;
-}
-
-/* Styles for the text boxes and images inline */
-.text-box-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    /* Make both text boxes have the same height */
-    margin-top: 20px;
-}
-
-.text-box-left {
-    background-color: #ccc;
-    padding: 20px;
-    border-radius: 10px;
-    flex: 1;
-    max-width: 50%;
-}
-
-.text-box-right {
-    background-color: #ccc;
-    padding: 20px;
-    border-radius: 10px;
-    flex: 1;
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.text-box-right p {
-    margin: 0;
-}
-
-.text-box-right img {
-    width: 80%;
-    max-height: 100%;
-    margin-top: 20px;
-}
-
-.image-inline {
-    width: 100px;
-    /* Adjust the size as needed */
-}
-.box {
-    width: 100px;
-    height: 100px;
-    border: 1px solid #000;
-    margin: 10px;
-    cursor: pointer;
-}
     </style>
 </head>
 
 <body>
-    <header>
+    <header style="position: fixed;">
         <!-- Add a class to the nav bar for easy selection -->
         <nav class="navbar">
             <ul>
@@ -109,30 +31,7 @@
     <main>
 
         <section id="About">
-            <h2 style="font-size: 60pt; text-align: center;">About</h2>
-            <div class="content-container">
-                <div class="gray-box">
-                    <p>This is some text inside the gray box.</p>
-                </div>
-                <img src="path/to/your/image.jpg" alt="Image" class="image">
-            </div>
-           
-
-            <div class="text-box-container">
-                <div class="text-box-left">
-                    <p>This is the text inside the left text box.</p>
-                </div>
-                <img src="path/to/your/image.jpg" alt="Image" class="image-inline">
-            </div>
-
-
-            <div class="text-box-container">
-                <img src="path/to/your/image.jpg" alt="Image" class="image-inline">
-                <div class="text-box-right">
-                    <p>This is the text inside the right text box.</p>
-                </div>
-
-            </div>
+            
 
         </section>
 

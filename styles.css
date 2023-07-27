@@ -24,6 +24,7 @@ nav {
     justify-content: space-between;
     /* Align the nav items to the right */
     align-items: center;
+  
 }
 
 nav ul {
@@ -67,6 +68,18 @@ header img {
 }
 
 #About {
+     height: 100vh;
+     display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        background-image: url("assets/about.png");
+        background-size: cover;
+        background-position: center;
+    
+        background-repeat: no-repeat;
+        
     padding-top: 70px;
     /* Add padding to push content below the fixed nav */
 }
