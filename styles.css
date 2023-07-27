@@ -17,14 +17,21 @@ body {
 }
 
 /* Your existing CSS styles for the nav bar */
-nav {
-    background-color: #f1f1f1;
-    padding: 10px 20px;
+/* Add styles for the nav bar */
+.navbar {
     display: flex;
     justify-content: space-between;
-    /* Align the nav items to the right */
     align-items: center;
-  
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+.navbar img {
+    width: 10%;
+    /* Adjust the image size as needed */
+    height: auto;
+    margin-right: 10px;
 }
 
 nav ul {
@@ -42,17 +49,7 @@ nav a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    /* Increase the font size of the text */
     font-size: 18px;
-}
-
-/* Add styles for the nav bar image */
-nav img {
-    width: 40px;
-    /* Adjust the image size as needed */
-    height: auto;
-    margin-right: 10px;
-    /* Add a little spacing between the image and text */
 }
 
 header {
