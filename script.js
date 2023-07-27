@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded',  () => {
         var firstImage = document.getElementById("firstImage");
         var secondImage = document.getElementById("secondImage");
 
-        firstImage.style.left = "-50%";
+        firstImage.style.left = "-70%";
         /* Move the first image to the left */
         /*firstImage.style.opacity = "0";*/
 

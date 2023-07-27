@@ -2,7 +2,19 @@ body {
     margin: 0;
     padding: 0;
 }
-
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Set both images to cover the container */
+    
+    /* Set the images to cover the container */
+    object-fit: cover;
+    /* Maintain the image aspect ratio and cover the container */
+    opacity: 1;
+    transition: all 1s ease;
+}
 
 /* Your existing CSS styles for the nav bar */
 nav {
@@ -524,39 +536,26 @@ button:hover::after {
 
 .container {
     position: relative;
-    width: 400px;
+    width: 600px;
     /* Adjust the width as needed */
-    height: 300px;
+    height: 450px;
     /* Adjust the height as needed */
     /* Set the width and height for the container to hold both images */
 }
 
-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    /* Set both images to cover the container */
-    height: 100%;
-    /* Set the images to cover the container */
-    object-fit: cover;
-    /* Maintain the image aspect ratio and cover the container */
-    opacity: 1;
-    transition: all 1s ease;
-}
+
 
 #firstImage {
-    width: 500px;
+    width: 100%;
     /* Adjust the width as needed */
-    height: auto;
     /* This maintains the image aspect ratio */
     z-index: 2;
 }
 
 #secondImage {
-    width: 500px;
+    top: 50%;
+width: 200;
     /* Adjust the width as needed */
-    height: auto;
     /* This maintains the image aspect ratio */
     left: 150%;
     opacity: 0;
