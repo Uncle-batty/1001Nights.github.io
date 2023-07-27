@@ -63,9 +63,15 @@ header img {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-size: 16px;
+    background-image: url("assets/landingPageBg.png");
+    background-size: cover;
+    background-position: center;
+    /* Set the background image to cover the entire section */
+    background-repeat: no-repeat;
+    /* Prevent the background image from repeating */
 }
 
 #hero p:nth-child(1) {
@@ -513,6 +519,49 @@ button:hover::after {
 .yellow-boxcenter2:hover {
     transform: scale(1.1);
 }
+
+
+
+.container {
+    position: relative;
+    width: 400px;
+    /* Adjust the width as needed */
+    height: 300px;
+    /* Adjust the height as needed */
+    /* Set the width and height for the container to hold both images */
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Set both images to cover the container */
+    height: 100%;
+    /* Set the images to cover the container */
+    object-fit: cover;
+    /* Maintain the image aspect ratio and cover the container */
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+#firstImage {
+    width: 500px;
+    /* Adjust the width as needed */
+    height: auto;
+    /* This maintains the image aspect ratio */
+    z-index: 2;
+}
+
+#secondImage {
+    width: 500px;
+    /* Adjust the width as needed */
+    height: auto;
+    /* This maintains the image aspect ratio */
+    left: 150%;
+    opacity: 0;
+}
+
 /* Max half of the page for text-box containers with images */
 @media (max-width: 768px) {
     .text-box-container {
