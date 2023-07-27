@@ -554,7 +554,7 @@ button:hover::after {
 
 #secondImage {
     top: 50%;
-width: 200;
+width: 100%;
     /* Adjust the width as needed */
     /* This maintains the image aspect ratio */
     left: 150%;
