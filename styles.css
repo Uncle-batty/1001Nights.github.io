@@ -1,0 +1,533 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Your existing CSS styles for the nav bar */
+nav {
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    /* Align the nav items to the right */
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    /* Increase the font size of the text */
+    font-size: 18px;
+}
+
+/* Add styles for the nav bar image */
+nav img {
+    width: 40px;
+    /* Adjust the image size as needed */
+    height: auto;
+    margin-right: 10px;
+    /* Add a little spacing between the image and text */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+header img {
+    margin-right: 20px;
+}
+
+#About {
+    padding-top: 70px;
+    /* Add padding to push content below the fixed nav */
+}
+/* Your existing CSS styles for the #hero section */
+#hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+#hero p:nth-child(1) {
+    font-size: 45px;
+    margin-top: 20px;
+}
+
+#hero p:nth-child(2) {
+    font-size: 45px;
+}
+
+#hero p:nth-child(3) {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+/* Additional styles for the clickable overlay */
+.hero-link {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    /* Make sure the content is above the overlay */
+}
+
+/* Transparent overlay with higher z-index */
+.hero-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 2;
+    /* Place the overlay above the content */
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+}
+/* Add styles for the About section */
+#About {
+    text-align: center;
+}
+
+#About h2 {
+    font-size: 24px;
+}
+
+/* Styles for the content container */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.gray-box {
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.image {
+    display: block;
+    width: 200px;
+    /* Adjust the size as needed */
+    margin-top: 20px;
+}
+
+/* Styles for the text boxes and images inline */
+.text-box-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    /* Make both text boxes have the same height */
+    margin-top: 20px;
+}
+
+.text-box-left {
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    max-width: 50%;
+}
+
+.text-box-right {
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.text-box-right p {
+    margin: 0;
+}
+
+.text-box-right img {
+    width: 80%;
+    max-height: 100%;
+    margin-top: 20px;
+}
+
+.image-inline {
+    width: 100px;
+    /* Adjust the size as needed */
+}
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.box:hover {
+    transform: scale(1.2);
+}
+
+.box .text {
+    text-align: center;
+    font-size: 16px;
+}
+#Plan {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#Plan h2 {
+    font-size: 24px;
+}
+
+.columns-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.column {
+    width: 220px;
+    margin: 20px;
+}
+
+.square-image {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 5px;
+}
+
+.column h3 {
+    font-size: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.column p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.column button {
+    margin-top: 10px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+/* Optional: Hover effect on buttons */
+.column button:hover {
+    background-color: #0056b3;
+}
+button {
+    position: relative;
+    margin: 0;
+    padding: 0.8em 1em;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    background-color: #333;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: inherit;
+    z-index: 0;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+button:hover {
+    animation: sh0 0.5s ease-in-out both;
+}
+
+@keyframes sh0 {
+    0% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+
+    25% {
+        transform: rotate(7deg) translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: rotate(-7deg) translate3d(0, 0, 0);
+    }
+
+    75% {
+        transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+}
+
+button:hover span {
+    animation: storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+}
+
+button::before,
+button::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0;
+    transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+    z-index: -1;
+    transform: translate(100%, -25%) translate3d(0, 0, 0);
+}
+
+button:hover::before,
+button:hover::after {
+    opacity: 0.15;
+    transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+button:hover::before {
+    transform: translate3d(50%, 0, 0) scale(0.9);
+}
+
+button:hover::after {
+    transform: translate(50%, 0) scale(1.1);
+}
+.stage-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.yellow-box1,
+.yellow-box2,
+.red-box,
+.center-box,
+.rounded-box,
+.sign-box,
+.yellow-boxcenter1,
+ .yellow-boxcenter2,
+ .line,
+ .text-right {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 24px;
+}
+
+.yellow-box1 {
+    background-color: yellow;
+    border-top-left-radius: 100px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    
+}
+.yellow-box2 {
+    background-color: yellow;
+    border-top-right-radius: 100px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    
+}
+
+.yellow-boxcenter1 {
+    background-color: yellow;
+    border-top-left-radius: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+}
+.yellow-boxcenter2 {
+    background-color: yellow;
+   
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+}
+
+.red-box {
+    background-color: red;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+}
+
+.center-box {
+    background-color: red;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+   
+}
+
+.rounded-box {
+    background-color: red;
+    width: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+}
+
+.sign-box {
+    background-color: purple;
+    width: 300px;
+    height: 70px;
+    border-top-left-radius: 70px ;
+    border-top-right-radius: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+}
+/* Updated styles for columns */
+.column-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.line-text-column {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    padding-left: 250px;
+}
+
+.line {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    margin-left: 60px;
+    /* Adjust the spacing between the line and text */
+}
+
+.text-right {
+    font-size: 30px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.stage-column {
+    width: 80%;
+}
+
+/* Hover effect */
+.yellow-box1:hover,
+.yellow-box2:hover,
+.red-box:hover,
+.center-box:hover,
+.rounded-box:hover,
+.sign-box:hover,
+.yellow-boxcenter1:hover,
+.yellow-boxcenter2:hover {
+    transform: scale(1.1);
+}
+/* Max half of the page for text-box containers with images */
+@media (max-width: 768px) {
+    .text-box-container {
+        flex-direction: column;
+    }
+
+    .text-box-left,
+    .text-box-right {
+        width: 100%;
+        max-width: 100%;
+        /* Change the max-width to 100% for responsiveness */
+        margin-top: 20px;
+    }
+
+    .image-inline {
+        margin-top: 20px;
+    }
+}
