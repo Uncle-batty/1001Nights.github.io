@@ -29,6 +29,21 @@ body {
     background-repeat: no-repeat;
 }
 
+#Trailer
+{
+    height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        background-image: url("assets/bg2.png");
+        background-size: cover;
+        background-position: center;
+        /* Set the background image to cover the entire section */
+        background-repeat: no-repeat;
+}
+
 /* Your existing CSS styles for the nav bar */
 /* Add styles for the nav bar */
 .navbar {
@@ -402,7 +417,7 @@ button:hover::after {
 }
 
 .yellow-box1 {
-    background-color: yellow;
+    background-color:#D5AF33;
     border-top-left-radius: 100px;
     margin-top: 30px;
     display: flex;
@@ -413,7 +428,7 @@ button:hover::after {
     
 }
 .yellow-box2 {
-    background-color: yellow;
+    background-color: #D5AF33;
     border-top-right-radius: 100px;
     margin-top: 30px;
     display: flex;
@@ -425,7 +440,7 @@ button:hover::after {
 }
 
 .yellow-boxcenter1 {
-    background-color: yellow;
+    background-color: #D5AF33;
     border-top-left-radius: 20px; 
     display: flex;
     justify-content: center;
@@ -434,7 +449,7 @@ button:hover::after {
     color: white;
 }
 .yellow-boxcenter2 {
-    background-color: yellow;
+    background-color: #D5AF33;
    
     border-top-right-radius: 20px;
     display: flex;
@@ -445,7 +460,7 @@ button:hover::after {
 }
 
 .red-box {
-    background-color: red;
+    background-color: #B05526;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -455,7 +470,7 @@ button:hover::after {
 }
 
 .center-box {
-    background-color: red;
+    background-color: #B05526;
     width: 150px;
     display: flex;
     justify-content: center;
@@ -466,7 +481,7 @@ button:hover::after {
 }
 
 .rounded-box {
-    background-color: red;
+    background-color: #AE2C24;
     width: 100px;
     border-radius: 10px;
     display: flex;
@@ -477,7 +492,7 @@ button:hover::after {
 }
 
 .sign-box {
-    background-color: purple;
+    background-color: #666666;
     width: 300px;
     height: 70px;
     border-top-left-radius: 70px ;
